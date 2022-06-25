@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "proxima-font";
+  src: url(./../proxima_ssv/Proxima\ Nova\ Alt\ Bold.otf),
+    url(./../proxima_ssv/Proxima\ Nova\ Alt\ Light.otf),
+    url(./../proxima_ssv/Proxima\ Nova\ Alt\ Thin.otf),
+    url(./../proxima_ssv/Proxima\ Nova\ Black.otf),
+    url(./../proxima_ssv/Proxima\ Nova\ Bold.otf),
+    url(./../proxima_ssv/Proxima\ Nova\ Extrabold.otf),
+    url(./../proxima_ssv/Proxima\ Nova\ Thin.otf),
+    url(./../proxima_ssv/ProximaNova-Regular.otf);
+}
+:root {
+  ---myGray: #d4d8e2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+/* Navbar start */
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6.875rem 1rem 1rem;
+  border-bottom: 2px solid #f5f5f5;
+}
+.nav-call {
+  display: flex;
+  gap: 4px;
+}
+.nav-search-form {
+  display: flex;
+  align-items: center;
+  width: 355px;
+  height: 35px;
+  padding: 10px 15px;
+  background: #f1f1f5;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+.nav-search-form input,
+.nav-search-form button {
+  padding: 0 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.nav-search-form input {
+  width: 100%;
+}
+.nav-sections {
+  display: flex;
+  gap: 10px;
+}
+.nav-line {
+  height: 50px;
+  width: 2px;
+  background: #f5f5f5;
+}
+.nav-user-sections {
+  display: flex;
+  gap: 10px;
+}
+.nav-user h2 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+}
+.nav-user p {
+  color: #616173;
+  letter-spacing: 0.03em;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 0.8rem;
+}
+
+/* --------------------main------------------ */
+main {
+  display: flex;
+  justify-content: stretch;
+}
+.right-side {
+  width: calc(100% - 130px);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+.left-side {
+  width: 130px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.left-side .each-choice a {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-side .img-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(---myGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.activeOrange {
+  background: #faa61a !important;
+}
+.myGray {
+  color: #616173;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-size: 0.875rem;
+  margin-top: 0.4rem;
+}
+.bg-white {
+  position: relative;
+  z-index: -5;
+  background-color: #ffffff;
+}
+.topDetails {
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+}
+.topDetails .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.topDetails .statistic {
+  color: #faa61a;
+  min-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  border: 1px solid #faa61a;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.centerSide {
+  height: calc(100% - 3.4rem);
+
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: small;
+  background-position: right top;
+  background-color: #f6f6fa;
+}
+.centerSide .center-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  align-items: center;
+}
+.center-title h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+.center-title ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+  border-radius: 48px;
+  height: 3rem;
+  color: #616173;
+  gap: 2rem;
+}
+.center-title ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+li.card-active-li {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 2px 4px rgba(97, 97, 115, 0.15);
+  border-radius: 48px;
+  height: 3rem;
+  min-width: 3.5rem;
+}
+.sm {
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+  font-style: normal;
+}
+
+/* ----------table------------ */
+
+.table-wrapper {
+  margin-top: 1rem;
+  box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.fl-table {
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+.fl-table th {
+  color: #9696aa;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 1rem 0;
+}
+.fl-table tr {
+  font: 1rem sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.105);
+  border-left: none;
+  border-right: none;
+}
+.fl-table tr:first-child {
+  border-top: none;
+}
+/* Responsive */
+
+@media (max-width: 767px) {
+  .fl-table {
+    display: block;
+    width: 100%;
+  }
+  .table-wrapper:before {
+    content: "Scroll horizontally >";
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
+  }
+  .fl-table thead,
+  .fl-table tbody,
+  .fl-table thead th {
+    display: block;
+  }
+  .fl-table thead th:last-child {
+    border-bottom: none;
+  }
+  .fl-table thead {
+    float: left;
+  }
+  .fl-table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  .fl-table td,
+  .fl-table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+  .fl-table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  .fl-table tbody tr {
+    display: table-cell;
+  }
+  .fl-table tbody tr:nth-child(odd) {
+    background: none;
+  }
+  .fl-table tr:nth-child(even) {
+    background: transparent;
+  }
+  .fl-table tr td:nth-child(odd) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+  .fl-table tr td:nth-child(even) {
+    border-right: 1px solid #e6e4e4;
+  }
+  .fl-table tbody td {
+    display: block;
+    text-align: center;
+  }
+}
